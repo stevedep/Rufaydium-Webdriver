@@ -165,6 +165,7 @@ class ChromeCapabilities extends Capabilities
         this.RemoveArg("--user-data-dir=","in")
         this.RemoveArg("--profile-directory=","in")
         ; adding new profile args
+	this.addArg("--no-sandbox")
         this.addArg("--user-data-dir=" userDataDir)
         this.addArg("--profile-directory=" profileName)
         
